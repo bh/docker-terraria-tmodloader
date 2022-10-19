@@ -1,0 +1,15 @@
+version: "1.0"
+services:
+  tml:
+    build:
+      context: .
+      args:
+        UID: 1000
+        GID: 1000
+    ports:
+      - "0.0.0.0:7777:7777"
+    volumes:
+      - ./Terraria:/home/tml/.local/share/Terraria
+      - ./install.txt:/home/tml/.local/share/Terraria/install.txt:ro
+      - ./enabled.json:/home/tml/.local/share/Terraria/enabled.json:ro
+      - ./serverconfig.txt:/home/tml/.local/share/Terraria/serverconfig.txt:ro

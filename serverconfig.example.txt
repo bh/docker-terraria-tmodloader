@@ -1,0 +1,9 @@
+password=PASSWORD
+autocreate=2
+port=7777
+maxplayers=2
+language=de-DE
+world=/home/tml/.local/share/Terraria/Worlds/FooBar.wld
+worldname=FooBar
+difficulty=1
+motd="Welcome to the server! :)"
